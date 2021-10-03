@@ -40,6 +40,24 @@ pointLight.position.y = 3;
 pointLight.position.z = 4;
 scene.add(pointLight);
 
+const pointLight2 = new THREE.PointLight(0xff0000, 0.9);
+// pointLight.position.x = 2;
+// pointLight.position.y = 3;
+// pointLight.position.z = 4;
+pointLight2.position.set(-0.7, 1, -0.15);
+pointLight2.intensity = 3;
+scene.add(pointLight2);
+
+// Adding controls to DAT GUI
+gui.add(pointLight2.position, "x").min(-6).max(6).step(0.01);
+gui.add(pointLight2.position, "y").min(-3).max(3).step(0.01);
+gui.add(pointLight2.position, "z").min(-3).max(3).step(0.01);
+gui.add(pointLight2, "intensity").min(0).max(10).step(0.01);
+
+const pointLight2Helper = new THREE.PointLightHelper(pointLight2, 0.3);
+
+scene.add(pointLight2Helper);
+
 /**
  * Sizes
  */
