@@ -147,13 +147,13 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
  */
 
 document.addEventListener("mousemove", onDocumentMouseMove);
-document.addEventListener("touchmove", onDocumentTouchMove);
+document.addEventListener("touchmove", onDocumentTouchMove, { passive: false });
 
-const updateSphere = (event) => {
-  sphere.position.y = window.scrollY * 0.001;
-};
+// const updateSphere = (event) => {
+//   sphere.position.y = window.scrollY * 0.001;
+// };
 
-window.addEventListener("scroll", updateSphere);
+// window.addEventListener("scroll", updateSphere);
 
 let mouseX = 0;
 let mouseY = 0;
@@ -170,8 +170,10 @@ function onDocumentMouseMove(event) {
 }
 
 function onDocumentTouchMove(event) {
-  mouseX = event.targetTouches[0].pageX - windowHalfX;
-  mouseY = event.targetTouches[0].pageY - windowHalfY;
+  event.preventDefault();
+
+  mouseX = event.targetTouches[0].pageX;
+  mouseY = event.targetTouches[0].pageY;
 }
 
 const clock = new THREE.Clock();
