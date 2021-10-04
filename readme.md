@@ -109,6 +109,20 @@ npm install
 
 ## Usage
 
+1. To run in development mode (i.e. with hot reload)
+
+```sh
+npm run dev
+```
+
+You will see a browser window open with the 3D interactive object.
+
+2. To create production build, run
+
+```sh
+npm run build
+```
+
 <!-- ROADMAP -->
 
 ## Roadmap
@@ -162,4 +176,4 @@ Project Link: [https://github.com/ehfazrezwan/three-DC-1](https://github.com/ehf
 [license-url]: https://github.com/ehfazrezwan/three-DC-1/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ehfazrezwan
-[product-screenshot]: images/app.png
+[product-screenshot]: images/app.gif

@@ -177,7 +177,7 @@ const tick = () => {
   const elapsedTime = clock.getElapsedTime();
 
   // Update objects
-  sphere.rotation.y = 0.5 * elapsedTime;
+  sphere.rotation.y = 1.5 * elapsedTime;
 
   sphere.rotation.y += 0.5 * (targetX - sphere.rotation.y);
   sphere.rotation.x += 0.05 * (targetY - sphere.rotation.x);
