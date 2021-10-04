@@ -42,7 +42,7 @@
     <a href="https://github.com/ehfazrezwan/three-DC-1"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://covid19-tracker-sninja.web.app/" target = "_blank">View Demo</a>
+    <a href="https://threejs-sninja.web.app/" target = "_blank">View Demo</a>
     ·
     <a href="https://github.com/ehfazrezwan/three-DC-1/issues">Report Bug</a>
     ·

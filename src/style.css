@@ -21,15 +21,3 @@ body {
   outline: none;
   mix-blend-mode: exclusion;
 }
-
-.container {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
-h1 {
-  font-size: 8rem;
-  text-transform: uppercase;
-  color: white;
-}

@@ -147,6 +147,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
  */
 
 document.addEventListener("mousemove", onDocumentMouseMove);
+document.addEventListener("touchmove", onDocumentTouchMove);
 
 const updateSphere = (event) => {
   sphere.position.y = window.scrollY * 0.001;
@@ -166,6 +167,11 @@ const windowHalfY = window.innerHeight / 2;
 function onDocumentMouseMove(event) {
   mouseX = event.clientX - windowHalfX;
   mouseY = event.clientY - windowHalfY;
+}
+
+function onDocumentTouchMove(event) {
+  mouseX = event.targetTouches[0].pageX - windowHalfX;
+  mouseY = event.targetTouches[0].pageY - windowHalfY;
 }
 
 const clock = new THREE.Clock();
